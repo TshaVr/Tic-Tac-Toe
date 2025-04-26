@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="website icon" type="png" href="Tic Tac Toe icon.png">
+    <title>TIC TAC TOE</title>
+</head>
+<body>
+    <div id="alert" class="alert">
+        <div class="msg">NEW GAME!!</div>
+        <button class="hide" onclick="hide()">OKAY</button>
+    </div>
+    
+
+    <header class="h1">TIC TAC TOE</header>
+    <img class="newgame" src="Tic Tac Toe icon.png" onclick="resetgame()" alt="">
+
+    <div class="grid">
+        <div class="boxes">
+            <div class="details">
+                <span class="status">PLAY NOW!</span>
+            </div>
+        </div>
+
+        <div class="squares">
+            <section>
+                <span data-info ="0" onclick="soundbox()" class ="box"></span>
+                <span data-info ="1" onclick="soundbox()" class ="box"></span>
+                <span data-info ="2" onclick="soundbox()" class ="box"></span>
+            </section>
+            <section>
+                <span data-info ="3" onclick="soundbox()" class ="box"></span>
+                <span data-info ="4" onclick="soundbox()" class ="box"></span>
+                <span data-info ="5" onclick="soundbox()" class ="box"></span>
+            </section>
+            <section>
+                <span data-info ="6" onclick="soundbox()" class ="box"></span>
+                <span data-info ="7" onclick="soundbox()" class ="box"></span>
+                <span data-info ="8" onclick="soundbox()" class ="box"></span>
+            </section>
+        </div> 
+
+        <button class="restart" onclick="soundreset()">Restart</button>
+          
+    </div>
+
+    <div class="user_box">
+        <p class="Xname">USER X:</p>
+        <div id="userX">
+            <span id="p1">0</span>
+        </div>
+        <p class ="Oname">USER O:</p>
+        <div id ="userO">
+            <span id="p2">0</span>
+        </div>
+    </div>
+
+    <div class="music_">
+        <div class="button3">
+            <img id="button_song" src="play_button.png" alt="">
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;PLAY SONG</p>
+    </div>
+    
+    <audio id ="song">
+        <source src="song.mp3" type="audio/mp3">
+    </audio>  
+    
+    <div class="back_">
+        <p>&nbsp;&nbsp;&nbsp;BACK</p>
+        <div class="button4">
+            <a href="index.html">
+                <img id="button_back" src="back_button.png" alt="">
+            </a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
